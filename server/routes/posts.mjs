@@ -21,7 +21,8 @@ postsRoutes.get("/latest", async (req, res) => {
     let results = await collection.aggregate([
       {"$project": {"author": 1, "title": 1, "tags": 1, "date": 1}},
       {"$sort": {"date": -1}},
-      {"$limit": 5}
+      {"$limit": 5
+    }
     ]).toArray();
     res.send(results).status(200);
   });

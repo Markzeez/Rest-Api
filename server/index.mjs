@@ -12,6 +12,7 @@ app.use(cors());
 app.use("/posts", posts);
 app.use(express.json())
 
+
 app.listen(PORT, ()=>{
     console.log(`server is running on http://localhost:${PORT}`)
 })
