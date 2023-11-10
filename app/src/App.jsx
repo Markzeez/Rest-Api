@@ -9,7 +9,7 @@ function App() {
 
   return (
     <div className='flex font-josefin justify-center mx-8 '>
-      <div className='flex-[1] w-full h-screen bg-green-100 '>
+      <div className='flex-[1]  w-full h-screen bg-green-100 '>
         <SideBar />
       </div>
       <div className='flex-[9]'>
